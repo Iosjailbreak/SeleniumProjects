@@ -1,0 +1,37 @@
+#! /usr/bin/python
+from selenium import webdriver 
+from selenium.webdriver.common.keys import Keys
+
+
+class github():
+	def __init__(self,username,password):
+		self.username=username
+		self.password=password
+		self.driver=webdriver.Chrome()
+		
+	def login (self):
+		driver=self.driver
+		driver.get('https://github.com/login')
+	
+	def values(self):
+		driver=self.driver
+		email_button =driver.find_element_by_xpath('//input[@name="login"]')
+		email_button.send_keys(username)
+		passw_button=driver.find_element_by_xpath('//input[@name="password"]')
+		passw_button.click()
+		passw_button.clear()
+		passw_button.send_keys(password)
+		passw_button.send_keys(Keys.RETURN)
+		
+		
+		
+		
+if __name__=="__main__":
+	username='' #-------->put your username here
+	password=''#--------->put your password here
+	#print(username,password)
+	gh=github(username,password)
+	gh.login()
+	gh.values()
+	
+
