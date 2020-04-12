@@ -1,0 +1,30 @@
+~what does it do?~
+it opens your github, types your information and login
+to your account. Thats it XD
+
+~Why there is file called installer.sh?~
+if you want to start the script by just typing github in python ,
+you need to copy github to /bin but installer.sh does that for you! :D
+
+~how to set up everything?~
+simply edit the github script and search for username = '' and 
+password= '' then add your github username in username and 
+add you github password in password. 
+
+~how to install it?~
+open terminal in the working directory , type 'sudo bash installer.sh'
+done! :> you can now type github in terminal and you will login 
+automaticly
+
+~can i run it without installation?~
+yeah sure you can , simply open terminal in the working directory
+and type 'python github'
+
+~why i cant login?~
+did you check if your information(username/password) is correct?
+dont forget that you need to edit github to add your username/
+password
+
+~Credits~
+Goes to me (Iosjailbreak)
+instagram  (@adel_naim)
